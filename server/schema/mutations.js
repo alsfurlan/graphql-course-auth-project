@@ -22,3 +22,5 @@ const mutations = new GraphQLObjectType({
     },
   },
 });
+
+module.exports = mutations;
