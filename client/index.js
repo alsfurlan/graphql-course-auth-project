@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 import { Router, hashHistory, Route, IndexRoute } from 'react-router';
 import App from './components/App';
 import LoginForm from './components/LoginForm';
+import './index.css';
 
 const client = new ApolloClient({
   dataIdFromObject: (object) => object.id,
