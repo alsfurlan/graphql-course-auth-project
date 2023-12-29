@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import AuthForm from './AuthForm';
+import login from '../mutations/login';
+import { graphql } from 'react-apollo';
 
 class LoginForm extends Component {
   render() {
-    return <div className='container'>
+    return (
+      <div className='container'>
         <h3>Login</h3>
         <AuthForm />
-    </div>;
+      </div>
+    );
   }
 }
 
-export default LoginForm;
+export default graphql(login)(LoginForm);
