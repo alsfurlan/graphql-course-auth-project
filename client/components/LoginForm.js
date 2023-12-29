@@ -8,6 +8,7 @@ class LoginForm extends Component {
   onSubmit(email, password) {
     this.props.mutate({
       variables: { email, password },      
+      refetchQueries: [{ query }],
     });
   }
 
