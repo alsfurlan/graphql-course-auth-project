@@ -7,6 +7,7 @@ import App from './components/App';
 import LoginForm from './components/LoginForm';
 import './index.css';
 import SignupForm from './components/SignupForm';
+import Dashboard from './components/Dashboard';
 
 const client = new ApolloClient({
   dataIdFromObject: (object) => object.id,
@@ -19,6 +20,7 @@ const Root = () => {
         <Route path='/' component={App}>
           <Route path="/login" component={LoginForm}></Route>
           <Route path="/signup" component={SignupForm}></Route>
+          <Route path="/dashboard" component={Dashboard}></Route>
         </Route>
       </Router>
     </ApolloProvider>
